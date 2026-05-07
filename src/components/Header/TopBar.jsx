@@ -24,19 +24,19 @@ const TopBar = () => {
 
   return (
     <header className="  w-full  mx-auto flex flex-col bg-white">
-      <div className="flex h-[96px]  items-start px-[90px] w-full">
+      <div className="flex h-24  items-start px-22.5 w-full">
         <div className="flex items-center cursor-pointer gap-[6.5px] mt-[31.5px]">
           <img
             src={firstlogo}
             alt="Luminae Logo"
-            className="w-[49px] h-[33px] object-contain"
+            className="w-12.25 h-8.25 object-contain"
           />
-          <h2 className="text-[32px] font-['Lato'] font-bold text-black leading-[32px] tracking-tight">
+          <h2 className="text-[32px] font-['Lato'] font-bold text-black leading-8 tracking-tight">
             Luminae
           </h2>
         </div>
 
-        <div className="flex items-center w-[345px] h-[40px] ml-[28.5px] mt-[28px] border border-[#D9D9D9] rounded-[4px] px-[12px] py-[8px] gap-[12px] bg-white focus-within:border-black transition-colors">
+        <div className="flex items-center w-86.25 h-[40px] ml-[28.5px] mt-[28px] border border-[#D9D9D9] rounded-[4px] px-[12px] py-[8px] gap-[12px] bg-white focus-within:border-black transition-colors">
           <input
             type="text"
             placeholder="Search Products"
