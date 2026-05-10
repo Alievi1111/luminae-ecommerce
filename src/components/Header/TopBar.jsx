@@ -36,67 +36,63 @@ const TopBar = () => {
           </h2>
         </div>
 
-        <div className="flex items-center w-86.25 h-[40px] ml-[28.5px] mt-[28px] border border-[#D9D9D9] rounded-[4px] px-[12px] py-[8px] gap-[12px] bg-white focus-within:border-black transition-colors">
+        <div className="flex items-center w-86.25 h-10 ml-[28.5px] mt-7 border border-[#D9D9D9] rounded-sm px-3 py-2 gap-3 bg-white focus-within:border-black transition-colors">
           <input
             type="text"
             placeholder="Search Products"
             className="outline-none text-[14px] text-black placeholder:text-[#808080] font-['Lato'] flex-1"
           />
 
-          <div className="flex items-center gap-[12px] border-l border-[#D9D9D9] pl-[12px]">
+          <div className="flex items-center gap-3 border-l border-[#D9D9D9] pl-3">
             <span className="text-[14px] text-[#1A1A1A] font-['Lato'] whitespace-nowrap cursor-pointer">
               All categories
             </span>
             <img
               src={vector}
               alt="arrow"
-              className="w-[10px] h-[5px] cursor-pointer"
+              className="w-2.5 h-1.25 cursor-pointer"
             />
           </div>
 
-          <div className="flex items-center justify-center border-l border-[#D9D9D9] pl-[12px] cursor-pointer">
-            <img
-              src={searchvector}
-              alt="search"
-              className="w-[20px] h-[20px]"
-            />
+          <div className="flex items-center justify-center border-l border-[#D9D9D9] pl-3 cursor-pointer">
+            <img src={searchvector} alt="search" className="w-5 h-5" />
           </div>
         </div>
 
-        <nav className="flex w-[420px] h-[20px] items-center justify-between ml-[80px]  mt-[38px]">
+        <nav className="flex w-105 h-5 items-center justify-between ml-20 mt-9.5">
           {links.map((link, index) => (
             <a
               key={index}
               href={link.href}
-              className="text-[14px] leading-[20px] text-[#505050] font-['Lato'] hover:text-black transition-colors whitespace-nowrap"
+              className="text-[14px] leading-5 text-[#505050] font-['Lato'] hover:text-black transition-colors whitespace-nowrap"
             >
               {link.name}
             </a>
           ))}
         </nav>
-        <div className="flex items-center gap-3 w-[127.5px] h-[24px] mt-[38px] ml-[80px]">
+        <div className="flex items-center gap-3 w-[127.5px] h-6 mt-9.5 ml-20">
           <img src={instalogo} alt="instagram image" />
           <img src={fblogo} alt="facebook image" />
           <img src={telegramlogo} alt="telegram image" />
         </div>
       </div>
-      <div className="w-full h-[78px]  flex  bg-[#262626]">
-        <div className="flex w-[144.5px] ml-[90px] items-center mt-[27px] h-6">
+      <div className="w-full h-19.5 flex bg-[#262626]">
+        <div className="flex w-[144.5px] ml-22.5 items-center mt-6.75 h-6">
           <div>
             <img src={categories} alt="categories img" />
           </div>
-          <div className="ml-[12px]  font-bold font-['Lato'] text-white">
+          <div className="ml-3 font-bold font-['Lato'] text-white">
             <h1>Categories</h1>
           </div>
         </div>
         <div
-          className="flex w-[144px] h-[20px] mt-[29px] gap-4 
+          className="flex w-36 h-5 mt-7.25 gap-4 
         "
         >
-          <div className="flex ml-[24px]">
+          <div className="flex ml-6">
             <h1 className="text-white text-[12px]  ">USD</h1>
             <img
-              className="mb-[4px] cursor-pointer "
+              className="mb-1 cursor-pointer "
               src={smallarrow}
               alt="arrow image"
             />
@@ -104,16 +100,16 @@ const TopBar = () => {
           <div className="flex">
             <h1 className="text-white text-[12px] ">English</h1>
             <img
-              className="mb-[4px] cursor-pointer "
+              className="mb-1 cursor-pointer "
               src={smallarrow}
               alt="arrow image"
             />
           </div>
         </div>
 
-        <div className="w-[341px] h-[62px] ml-[144px] flex  mt-[8px]">
+        <div className="w-85.25 h-15.5 ml-36 flex mt-2">
           <img src={Mencosmetic} alt="mencosmetics image" />
-          <div className="ml-[10px] mt-[8.5px]">
+          <div className="ml-2.5 mt-[8.5px]">
             <div>
               <h1 className="text-[12px]  text-white font-bold font-['Lato']">
                 Weekly Men's Toiletries Coupons.
@@ -126,7 +122,7 @@ const TopBar = () => {
             </div>
           </div>
         </div>
-        <div className=" w-[340px] h-[24px] mt-[27px] ml-[144.75px] flex  justify-between">
+        <div className="w-85 h-6 mt-6.75 ml-[144.75px] flex justify-between">
           <div className="flex gap-1 cursor-pointer">
             <img src={Signin} alt="Signin img" />
             <h1 className="text-white text-[14px]">Sign in</h1>
@@ -138,7 +134,7 @@ const TopBar = () => {
           <div className="flex gap-1 cursor-pointer   ">
             <img src={Card} alt="card img" />
             <h1 className="text-white text-[14px]">Card</h1>
-            <img className="pl-[8px]" src={numberimg} alt="Number img" />
+            <img className="pl-2" src={numberimg} alt="Number img" />
           </div>
         </div>
       </div>
